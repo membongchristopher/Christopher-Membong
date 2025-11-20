@@ -378,6 +378,21 @@ section:nth-child(even) {
   border-radius: 6px;
   transition: width 1.5s ease-in-out;
 }
+/* Project & Hobby Icons */
+.project-icon, .hobby-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-icon svg, .hobby-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Projects Section */
 .projects-grid {
@@ -781,4 +796,5 @@ footer {
     width: 100%;
     justify-content: center;
   }
+
 }
