@@ -579,11 +579,32 @@ section:nth-child(even) {
   color: var(--primary-color);
 }
 
+/* Project & Hobby Images */
+.project-image, .hobby-image {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-image img, .hobby-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img,
+.hobby-card:hover .hobby-image img {
+  transform: scale(1.05);
+}
+
 .hobby-content p {
   margin-bottom: 1.5rem;
   color: #666;
   line-height: 1.6;
 }
+
+
 
 /* Contact Section */
 .contact-container {
@@ -798,3 +819,4 @@ footer {
   }
 
 }
+
