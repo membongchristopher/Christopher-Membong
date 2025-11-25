@@ -866,6 +866,35 @@ textarea.form-control {
   }
 }
 
+/* ===== AVAILABILITY BADGE STYLES ===== */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(46, 204, 113, 0.1);
+  color: #27ae60;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #27ae60;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
 
 /* Footer */
 footer {
@@ -982,6 +1011,7 @@ footer {
   }
 
 }
+
 
 
 
