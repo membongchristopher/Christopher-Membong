@@ -605,7 +605,6 @@ section:nth-child(even) {
 }
 
 
-
 /* Contact Section */
 .contact-container {
   display: grid;
@@ -730,6 +729,7 @@ textarea.form-control {
   }
 }
 
+
 /* Footer */
 footer {
   background-color: var(--dark-color);
@@ -845,5 +845,6 @@ footer {
   }
 
 }
+
 
 
