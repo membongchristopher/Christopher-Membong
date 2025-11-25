@@ -547,6 +547,143 @@ section:nth-child(even) {
   left: -12px;
 }
 
+/* Education Section */
+.education-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+}
+
+.education-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.edu-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.edu-content {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.edu-content:hover {
+  transform: translateY(-5px);
+}
+
+.edu-content h3 {
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.edu-degree {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.edu-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.edu-details {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.edu-date, .edu-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.edu-date::before {
+  content: '📅';
+}
+
+.edu-location::before {
+  content: '📍';
+}
+
+.edu-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.course-tag {
+  background: #f0f0f0;
+  color: var(--dark-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .education-timeline::before {
+    left: 25px;
+  }
+  
+  .education-item {
+    gap: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .edu-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .edu-content {
+    padding: 1.5rem;
+  }
+  
+  .edu-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 /* Hobbies Section */
 .hobbies-container {
   display: grid;
@@ -845,6 +982,7 @@ footer {
   }
 
 }
+
 
 
 
